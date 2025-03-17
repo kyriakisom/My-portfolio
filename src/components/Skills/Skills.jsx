@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./Skills.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -24,17 +24,10 @@ const skillCategories = [
 ];
 
 const ITEMS_PER_PAGE = 1; // Show one category per page for carousel style
-const AUTO_SLIDE_INTERVAL = 3000; // 3 seconds interval for automatic slide change
 
 export const Skills = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const totalPages = Math.ceil(skillCategories.length / ITEMS_PER_PAGE);
-
-  // Automatically move to the next slide every 3 seconds
-  useEffect(() => {
-    const slideInterval = setInterval(handleNext, AUTO_SLIDE_INTERVAL);
-    return () => clearInterval(slideInterval); // Cleanup interval on component unmount
-  }, []);
 
   const handleNext = () => {
     setCurrentPage((prev) => (prev + 1) % totalPages);
@@ -64,7 +57,7 @@ export const Skills = () => {
         ))}
       </div>
 
-      {/* Optional Pagination Controls */}
+      {/* Pagination Controls */}
       <div className={styles.pagination}>
         <button onClick={handlePrev} disabled={currentPage === 0} className={styles.button}>&lt; Prev</button>
         <span className={styles.pageInfo}>Page {currentPage + 1} of {totalPages}</span>
