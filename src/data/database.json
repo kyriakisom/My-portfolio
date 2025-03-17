@@ -1,0 +1,14 @@
+[
+
+    {
+        "title": "MongoDB",
+        "imageSrc": "skills/mongodb.png",
+        "category": "Database"
+      },
+     
+      {
+        "title": "SQL",
+        "imageSrc": "skills/sql.png",
+        "category": "Database"
+      }
+]

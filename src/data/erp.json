@@ -1,0 +1,13 @@
+
+  [
+        {
+            "title": "ERP Systems",
+            "imageSrc": "skills/erp.png",
+            "category": " Tools"
+          },
+          {
+            "title": "Project Analysis",
+            "imageSrc": "skills/project.png",
+            "category": " Tools"
+          }
+        ]

@@ -1,0 +1,156 @@
+/* Navbar */
+.navbar {
+  position: fixed; /* Make the navbar fixed at the top */
+  top: 0; /* Set it at the top of the page */
+  left: 0; /* Ensure it starts at the left edge */
+  width: 100%; /* Full width */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px; /* Reduced padding to make it thinner */
+  z-index: 2;
+  margin-right: 12%; /* Adjust this percentage to control how far left it goes */
+  flex-direction: row; /* Ensure items are in the same row */
+  background: linear-gradient(135deg, #6a1b9a, #9c4dcc, #8e24aa); /* Bright lilac to deep purple gradient */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow for better visibility */
+}
+
+/* Title */
+.title {
+  font-size: 26px; /* Slightly smaller font size for a thinner look */
+  font-weight: 600;
+  text-decoration: none;
+  color: white; /* Change title color to white for contrast */
+  white-space: nowrap; /* Prevent the title from breaking into a new line */
+}
+
+/* Menu Button (hidden by default) */
+.menuBtn {
+  display: none;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+}
+
+/* Menu Items */
+.menuItems {
+  display: flex;
+  gap: 35px; /* Reduced the gap for a more compact look */
+  list-style: none;
+}
+
+/* Menu Links */
+.menuItems a {
+  font-size: 22px; /* Slightly smaller font size for a cleaner look */
+  color: white; /* Set menu link color to white for contrast */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for menu links */
+.menuItems a:hover {
+  color: #f480ff; /* Soft pink for hover effect */
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px; /* Reduce padding for mobile */
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px; /* Reduced gap for mobile */
+    z-index: 3;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px;
+    background: linear-gradient(
+      45deg,
+      #8e24aa, /* Deep purple */
+      #9c4dcc, /* Lilac */
+      #6a1b9a /* Bright purple */
+    ); /* Purple gradient */
+    padding: 20px 30px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .menuOpen {
+    display: flex;
+    z-index: 1;
+  }
+}
+
+/* Logo */
+.logo {
+  width: 45px; /* Adjusted for a more compact navbar */
+  height: 45px;
+  margin-left: 60px; /* Move logo to the right */
+  vertical-align: middle;
+}
+
+.languageSwitcher {
+  position: relative;
+}
+
+.switcherButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  font-size: 20px; /* Adjust icon size */
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%; /* Position the menu below the button */
+  right: 0;
+  background: linear-gradient(135deg, #6a1b9a, #9c4dcc, #8e24aa); /* Purple gradient */
+  border-radius: 5px;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  margin: 0;
+}
+
+.dropdownMenu li {
+  padding: 8px 20px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown items */
+.dropdownMenu li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Active state for dropdown items */
+.dropdownMenu li:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}

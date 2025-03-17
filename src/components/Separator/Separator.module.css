@@ -1,0 +1,81 @@
+.separatorWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+    position: relative;
+    width: 100%;
+    font-family: 'Courier New', monospace;
+    color: #d896ff;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Binary Rain Effect */
+  .binaryRain {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 20px;
+    color: #9400ff;
+    text-shadow: 0 0 8px #ff00ff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: binaryFlow 5s linear infinite;
+  }
+  
+  .binaryChar {
+    animation: glitchBinary 1.5s infinite alternate;
+  }
+  
+  /* Circuit Board Glow */
+  .circuitGlow {
+    width: 90%;
+    height: 6px;
+    background: linear-gradient(to right, #ff00ff, #9400ff, #ff00ff);
+    box-shadow: 0px 0px 20px #9400ff, 0px 0px 30px #ff00ff;
+    border-radius: 6px;
+    opacity: 0.8;
+    animation: circuitPulse 2s infinite alternate;
+  }
+  
+  /* Glitchy End Text */
+  .glitchText {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 12px #ff00ff, 0px 0px 24px #9400ff;
+    animation: glitchEffect 1.5s infinite alternate;
+    margin: 20px 0;
+  }
+  
+  /* === Animations === */
+  
+  /* Binary Characters Flow */
+  @keyframes binaryFlow {
+    from { transform: translateX(50%); }
+    to { transform: translateX(-50%); }
+  }
+  
+  /* Random Binary Flickering */
+  @keyframes glitchBinary {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.1); color: #ff00ff; }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Circuit Glow Effect */
+  @keyframes circuitPulse {
+    0% { opacity: 1; box-shadow: 0px 0px 10px #9400ff; }
+    100% { opacity: 0.5; box-shadow: 0px 0px 20px #ff00ff; }
+  }
+  
+  /* Glitching Text Effect */
+  @keyframes glitchEffect {
+    0% { opacity: 1; transform: translateX(0); }
+    20% { opacity: 0.9; transform: translateX(1px); }
+    40% { opacity: 1; transform: translateX(-1px); }
+    60% { opacity: 0.8; transform: translateX(0); }
+    100% { opacity: 1; transform: translateX(1px); }
+  }
+  

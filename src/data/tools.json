@@ -1,0 +1,36 @@
+[    
+  {
+    "title": "Figma",
+    "imageSrc": "skills/figma.png",
+    "category": "Tools"
+  },
+ {
+    "title": "VS Code",
+    "imageSrc": "skills/vscode.png",
+    "category": "Tools"
+  },
+  {
+    "title": "REST APIs",
+    "imageSrc": "skills/api.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Postman",
+    "imageSrc": "skills/postman.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Jest",
+    "imageSrc": "skills/jest.png",
+    "category": "Tools"
+  },
+  {
+    "title": "XAMPP",
+    "imageSrc": "skills/xampp.png",
+    "category": "Tools"
+  }
+  
+ 
+  
+  
+]

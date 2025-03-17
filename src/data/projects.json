@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Clinic management",
+    "imageSrc": "projects/medilife.png",
+    "description": "The topic of the current project is the design and implementation of a web application for the management of a medical practice. In particular, the application allows the management of patients' information, their history and their appointments with the doctor. The application is usable by patients, the secretaries of the practice and the doctor.",
+    "skills": ["HTML5","CSS3", "Express", "Node.js"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/kyriakisom/clinic_management"},
+  {
+    "title": "Conference Management",
+    "imageSrc": "projects/conference.png",
+    "description": "The project involves creating a backend conference management system with RESTful web services that connect to a database for managing conference-related entities. Key functionalities include handling conferences and managing papers (manuscripts) submitted to these conferences.",
+    "skills": ["Node.js", "Express"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/kyriakisom/conference_management"
+  },
+  {
+    "title": "Grade management system",
+    "imageSrc": "projects/database.png",
+    "description": "Responsive and feature-rich website for a university department, supporting three user roles: admin, instructor, and student. Built with HTML5, CSS, JavaScript, PHP, and Bootstrap, with a MySQL database for backend operations. Includes functionality for user management, grade tracking, and multilingual support.",
+    "skills": ["PHP", "SQL", "HTML5", "CSS3"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/kyriakisom/grade_management_system"
+  },
+  {
+    "title": "Google API",
+    "imageSrc": "projects/api.png",
+    "description": "A YouTube Video Checker tool that uses the YouTube Data API to fetch and display video details like privacy status, age restrictions, and embeddability. Built with HTML, CSS, and JavaScript, it processes multiple video links in a user-friendly interface. Ideal for managing and verifying YouTube video statuses efficiently.",
+    "skills": ["HTML5","Node.js"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/kyriakisom/google_api"
+  },
+ 
+  {
+    "title": "My portfolio",
+    "imageSrc": "projects/portfolio.png",
+    "description": "A YouTube Video Checker tool that uses the YouTube Data API to fetch and display video details like privacy status, age restrictions, and embeddability. Built with HTML, CSS, and JavaScript, it processes multiple video links in a user-friendly interface. Ideal for managing and verifying YouTube video statuses efficiently.",
+    "skills": ["HTML5","CSS3","React","Node.js"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/kyriakisom/My-portfolio"
+  },
+  {
+    "title": "NSL-KDD Dataset",
+    "imageSrc": "projects/dataset.png",
+    "description": "A YouTube Video Checker tool that uses the YouTube Data API to fetch and display video details like privacy status, age restrictions, and embeddability. Built with HTML, CSS, and JavaScript, it processes multiple video links in a user-friendly interface. Ideal for managing and verifying YouTube video statuses efficiently.",
+    "skills": ["HTML5","Python"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/kyriakisom/NSL-KDD-dataset-for-digital-forensics"
+  }
+
+]
+

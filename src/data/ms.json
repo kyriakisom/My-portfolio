@@ -1,0 +1,17 @@
+[
+    {
+    "title": "Microsoft Word",
+    "imageSrc": "skills/word.png",
+    "category": " Tools"
+  },
+    {
+        "title": "Microsoft PowerPoint",
+        "imageSrc": "skills/ppt.png",
+        "category": " Tools"
+      },
+      {
+        "title": "Microsoft Excel",
+        "imageSrc": "skills/excel.png",
+        "category": " Tools"
+      }
+    ]

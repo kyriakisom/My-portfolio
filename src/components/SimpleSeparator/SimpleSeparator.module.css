@@ -1,0 +1,27 @@
+.separator {
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    position: relative;
+  }
+  
+  .separator::before {
+    content: "• • • • •"; /* The 5 dots */
+    font-size: 35px;
+    color: transparent;
+    position: absolute;
+    letter-spacing: 25px; /* Adjust space between the dots */
+    background: linear-gradient(to right, #4b0082, #6a0dad, #4b0082); /* Dark purple gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 
+      0 0 10px rgba(75, 0, 130, 0.7),  /* Indigo shadow */
+      0 0 20px rgba(106, 13, 173, 0.7), /* Dark violet shadow */
+      0 0 30px rgba(75, 0, 130, 0.7), 
+      0 0 40px rgba(106, 13, 173, 0.7);
+  }
+  

@@ -1,0 +1,253 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.containers {
+  position: relative;
+  top: -30px; /* Move it upwards */
+  width: 100%; /* Adjust percentage for a wider or narrower container */
+  max-width: 1200px; /* Limit maximum width */
+  height: auto; /* Adjust height automatically */
+  padding: 70px;
+  margin-top: 120px;
+  margin-left: 0.5%;
+  margin-right: 70%;
+  border-radius: 20px;
+  background: rgba(85, 43, 127, 0.725); /* Dark purple-black with transparency */
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5); /* Softer dark shadow */
+  border: 2px solid rgba(200, 162, 200, 0.2); /* Subtle lilac border */
+  backdrop-filter: blur(12px); /* Frosted glass effect */
+  transition: all 0.4s ease-in-out;
+}
+
+/* Gradient Border Effect */
+.containers::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 3px; /* Thickness of the border */
+  background: linear-gradient(135deg, #8a2be2, #c8a2c8, #4b0082); /* Purple/Lilac/Indigo */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Refined Background Icon */
+/* Repositioned Background Icon */
+.containers::before {
+  content: "\f3ed"; /* Unicode for FontAwesome fa-code icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 120px;
+  color: rgba(200, 162, 200, 0.08); /* Soft lilac opacity */
+  position: absolute;
+  bottom: 10px;  /* Positioned near the bottom */
+  right: 15px;   /* Positioned near the right */
+  transform: translate(0, 0); /* Reset transformation */
+}
+
+
+/* Hover Effect */
+.containers:hover {
+  box-shadow: 0px 12px 30px rgba(138, 43, 226, 0.4); /* Purple glow effect */
+  transform: scale(1.02); /* Slight lift on hover */
+}
+
+
+/* Styled "SKILLS" Title */
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0px 2px 8px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(90deg, #ffffff, #6cb6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  padding-left: 12px;
+  display: inline-block;
+}
+
+/* Left Border for Sleek Effect */
+.title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 70%;
+  background: linear-gradient(180deg, #6cb6ff, #ffffff);
+  border-radius: 2px;
+}
+
+/* Subtle Hover Effect */
+.title:hover {
+  text-shadow: 0px 4px 12px rgba(255, 255, 255, 0.5);
+}
+
+/* Layout for Skills */
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 14px;
+}
+
+.skills {
+  width: 38%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+}
+
+/* Skill Items */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+/* Skill Image Container */
+.skillImageContainer {
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+/* Skill Icons */
+.skillImageContainer img {
+  width: 60px;
+}
+
+/* Skill Text */
+.skill p {
+  font-size: 25px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Updated "SKILLS" Title */
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0px 2px 8px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(90deg, #ffffff, #6cb6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  padding-left: 12px;
+  display: inline-block;
+}
+
+/* Left Border for Sleek Effect */
+.title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 70%;
+  background: linear-gradient(180deg, #6cb6ff, #ffffff);
+  border-radius: 2px;
+}
+
+/* Subtle Hover Effect */
+.title:hover {
+  text-shadow: 0px 4px 12px rgba(255, 255, 255, 0.5);
+}
+
+/* Layout for Skills */
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 14px;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+}
+
+/* Skill Items */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+/* Skill Image Container */
+.skillImageContainer {
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+
+/* Skill Icons */
+.skillImageContainer img {
+  width: 75px;
+}
+
+/* Skill Text */
+.skill p {
+  font-size: 25px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

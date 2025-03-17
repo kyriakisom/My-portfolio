@@ -1,0 +1,16 @@
+[
+  
+    {
+      "title": "Node.js",
+      "imageSrc": "skills/node.png",
+      "category": "Backend"
+    },
+
+   
+    {
+      "title": "PHP",
+      "imageSrc": "skills/php.png",
+      "category": "Backend"
+    }
+  ]
+  

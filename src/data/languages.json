@@ -1,0 +1,17 @@
+[
+    {
+    "title": "Python",
+    "imageSrc": "skills/python.png",
+    "category": "Programming Languages"
+  },
+  {
+    "title": "Java",
+    "imageSrc": "skills/java.png",
+    "category": "Programming Languages"
+  },
+  {
+    "title": "C/C++",
+    "imageSrc": "skills/c_Cpp.png",
+    "category": "Programming Languages"
+  }
+]

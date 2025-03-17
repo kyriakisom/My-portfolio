@@ -1,0 +1,139 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin: 80px 10%;
+}
+
+.containers {
+  position: relative;
+  top: -30px;
+  width: 90%;
+  max-width: 1200px;
+  padding: 60px;
+  margin: 100px auto;
+  border-radius: 20px;
+  background: rgba(85, 43, 127, 0.75);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(200, 162, 200, 0.2);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.containers::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 3px;
+  background: linear-gradient(135deg, #8a2be2, #c8a2c8, #4b0082);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.containers::before {
+  content: "\f121";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 100px;
+  color: rgba(200, 162, 200, 0.1);
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.containers:hover {
+  box-shadow: 0px 12px 30px rgba(138, 43, 226, 0.5);
+  transform: scale(1.03);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0px 2px 8px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(90deg, #ffffff, #6cb6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  padding-left: 12px;
+  display: inline-block;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 75%;
+  background: linear-gradient(180deg, #6cb6ff, #ffffff);
+  border-radius: 2px;
+}
+
+.title:hover {
+  text-shadow: 0px 4px 12px rgba(255, 255, 255, 0.5);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.skillImageContainer {
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  transition: transform 0.3s ease;
+}
+
+.skillImageContainer:hover {
+  transform: scale(1.1);
+}
+
+.skillImageContainer img {
+  width: 55px;
+}
+
+.skill p {
+  font-size: 22px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+}

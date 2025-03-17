@@ -1,0 +1,34 @@
+[
+    {
+      "title": "HTML",
+      "imageSrc": "skills/html.png",
+      "category": "Frontend"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "skills/css.png",
+      "category": "Frontend"
+    },
+    {
+      "title": "Javascript",
+      "imageSrc": "skills/js.png",
+      "category": "Frontend"
+    },
+    {
+      "title": "Bootstrap",
+      "imageSrc": "skills/bootstrap.png",
+      "category": "Frontend"
+    },
+    {
+      "title": "JQuery",
+      "imageSrc": "skills/jquery.png",
+      "category": "Frontend"
+    },
+    
+    {
+        "title": "React",
+        "imageSrc": "skills/react.png",
+        "category": "Frontend"
+      }
+  ]
+  

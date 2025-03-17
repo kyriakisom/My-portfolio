@@ -1,0 +1,145 @@
+@import "../../vars.css";
+
+/* Container: Improved Alignment */
+.container {
+  position: relative;
+  padding: 60px 5%;
+  margin-top: 80px;
+  text-align: left; /* Align title to the left */
+  z-index: 1;
+}
+.title {
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 0px 4px 15px rgba(255, 255, 255, 0.4);
+  background: linear-gradient(90deg, #ffffff, #93d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+/* Left Border Effect */
+.title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 80%;
+  background: linear-gradient(180deg, #93d5ff, #ffffff);
+  border-radius: 3px;
+}
+
+/* Title Hover Glow Effect */
+.title:hover {
+  text-shadow: 0px 6px 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Centered Hobby Items */
+.aboutItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all items in a row */
+  gap: 40px;
+  color: var(--color-text);
+  margin-top: 40px;
+}
+
+/* Stunning Glassmorphism Cards */
+.aboutItem {
+  display: flex;
+  align-items: center;
+  width: 60%; /* Ensures items are centered */
+  padding: 18px 30px;
+  border-radius: 50px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+/* Hover Glow Effect */
+.aboutItem::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(165, 215, 232, 0.4), rgba(255, 255, 255, 0.1));
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.aboutItem:hover::before {
+  opacity: 1;
+}
+
+.aboutItem:hover {
+  transform: translateY(-10px) scale(1.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Floating Image Effect */
+.aboutItem img {
+  width: 65px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 15px;
+  transition: transform 0.5s ease, filter 0.3s ease-in-out;
+}
+
+.aboutItem:hover img {
+  transform: rotate(8deg) scale(1.15);
+  filter: brightness(1.2);
+}
+
+/* Typography Refinements */
+.aboutItem h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  background: linear-gradient(90deg, #ffffff, #93d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 0.3s ease-in-out;
+}
+
+.aboutItem p {
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Responsive & Adaptive */
+@media screen and (max-width: 830px) {
+  .container {
+    padding: 40px 8%;
+  }
+
+  .aboutItems {
+    gap: 25px;
+  }
+
+  .aboutItem {
+    width: 90%; /* Take up more space on smaller screens */
+    padding: 22px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutItem img {
+    margin-bottom: 12px;
+    margin-right: 0;
+  }
+}

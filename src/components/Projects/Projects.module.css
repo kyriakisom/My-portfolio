@@ -1,0 +1,54 @@
+@import "../../vars.css";
+
+.container {
+  margin-top: 76px;
+  color: var(--color-text);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Left-Aligned "PROJECTS" Title with Gradient */
+.title {
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 0px 4px 15px rgba(255, 255, 255, 0.4);
+  background: linear-gradient(90deg, #ffffff, #93d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+/* Left Border Effect */
+.title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 80%;
+  background: linear-gradient(180deg, #93d5ff, #ffffff);
+  border-radius: 3px;
+}
+
+/* Title Hover Glow Effect */
+.title:hover {
+  text-shadow: 0px 6px 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Projects Grid */
+.projects {
+  margin-top: 37px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+}
