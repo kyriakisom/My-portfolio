@@ -1,8 +1,5 @@
-# React + Vite
+# My_portfolio
+The project involves creating a backend conference management system with RESTful web services that connect to a database for managing conference-related entities. Key functionalities include handling conferences and managing papers (manuscripts) submitted to these conferences.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#how_to_run_it
+In the vscode terminal, type "npm install", to download the folder "node_modules" (The node_modules folder can become very large because it includes all dependencies required for the project, even those required by other dependencies, that's why you have to install it.) and then type "npm start", to start the server.
