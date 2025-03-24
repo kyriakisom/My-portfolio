@@ -29,6 +29,11 @@
         "title": "React",
         "imageSrc": "skills/react.png",
         "category": "Frontend"
+      } ,
+      {
+        "title": "Vue.js",
+        "imageSrc": "skills/vue.png",
+        "category": "Frontend"
       }
   ]
   
