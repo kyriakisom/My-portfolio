@@ -30,7 +30,19 @@
     "category": "Tools"
   }
   
- 
+  ,
+  {
+    "title": "Github",
+    "imageSrc": "skills/github.png",
+    "category": "Tools"
+  }
+  ,
+  {
+    "title": "Jira",
+    "imageSrc": "skills/jira.png",
+    "category": "Tools"
+  }
+  
   
   
 ]
