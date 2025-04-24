@@ -19,7 +19,7 @@ export const Navbar = () => {
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
         <img 
-          src="/favicon.mp4" 
+          src="/favicon.ico" 
           alt="logo" 
           className={styles.logo} 
         />
